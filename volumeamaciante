@@ -1,0 +1,23 @@
+Fofo = float(input("preco do primeiro amaciante: R$"))
+Volume_Fofo = float(input('Volume do primeiro amaciante: ml'))
+Downy = float(input( "preco do segundo amaciante: R$"))
+Volume_Downy = float(input('Volume do segundo amaciante : ml'))
+precoFofo_por_ml = Fofo / Volume_Fofo
+precoDowny_por_ml = Downy / Volume_Downy
+
+
+if precoFofo_por_ml<precoDowny_por_ml:
+    diferenca = precoDowny_por_ml - precoFofo_por_ml
+    mais_barato = Fofo
+    diferenca = precoDowny_por_ml - precoFofo_por_ml
+elif precoDowny_por_ml<precoFofo_por_ml:
+    mais_barato = Downy
+    diferenca = precoFofo_por_ml -precoDowny_por_ml
+else:
+    mais_barato = Fofo
+    diferenca = precoFofo_por_ml-precoDowny_por_ml
+
+print(f"preco por ml do primeiro: R$, {precoFofo_por_ml}")
+print(f"preco por ml do segundo: R$", {precoDowny_por_ml})
+print (f"mais vantajoso: {mais_barato}")    
+print (f"diferenca por ml; R$, {diferenca}")
